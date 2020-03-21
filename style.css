@@ -42,6 +42,7 @@ body {
     color: var(--bgColor);
     background-color: var(--accentColor);
     border: solid var(--accentColor) 2px;
+    border-radius: 10px;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
@@ -60,6 +61,7 @@ body {
 #profileQuote {
     color: #bbb;
     font-size: 1rem;
+    margin-bottom: 20px;
     display: block;
     font-family: var(--font);
     width: 100%;
