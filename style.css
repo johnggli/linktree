@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+:root {
+    --bgColor: white;
+    --accentColor: #39e09b;
+    --font: 'Karla', sans-serif;
+}
+
+body {
+    background-color: var(--bgColor);
+}
+
+#profilePicture {
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 35px auto 20px;
+    border-radius: 50%;
+}
+
+#userName {
+    color: #bbb;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#links {
+    max-width: 675px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+}
+
+.link {
+    font-family: var(--font);
+    color: var(--bgColor);
+    background-color: var(--accentColor);
+    border: solid var(--accentColor) 2px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+    padding: 17px;
+    text-decoration: none;
+    transition: all .25s cubic-bezier(.08, .59, .29, .99);
+}
+
+.link:hover {
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+}
