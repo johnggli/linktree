@@ -53,6 +53,7 @@ body {
     padding: 10px; /* 17px */
     text-decoration: none;
     /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
+    -webkit-tap-highlight-color: transparent;
 }
 
 @media (hover: hover) {
@@ -60,6 +61,11 @@ body {
         background-color: var(--accentColor);
         color: var(--bgColor);
     }
+}
+
+.link:active {
+    background-color: var(--accentColor);
+    color: var(--bgColor);
 }
 
 #profileQuote {
