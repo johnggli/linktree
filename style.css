@@ -9,6 +9,18 @@
 body {
     min-height: 100vh;
     background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, #090a0f 100%);
+    animation: 1s ease-out 0s 1 transitionAnimation; /* duration/timing-function/delay/iterations/name */
+}
+
+@keyframes transitionAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #profilePicture {
@@ -103,7 +115,7 @@ body {
     width: 1px;
     height: 1px;
     background: transparent;
-    animation: animStar 50s linear infinite;
+    animation: animStar 100s linear infinite;
 
     box-shadow: 779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
     1312px 276px #fff, 451px 625px #fff, 521px 1931px #fff, 1087px 1871px #fff,
@@ -475,7 +487,7 @@ body {
     width: 2px;
     height: 2px;
     background: transparent;
-    animation: animStar 100s linear infinite;
+    animation: animStar 150s linear infinite;
 
     box-shadow: 1448px 320px #fff, 1775px 1663px #fff, 332px 1364px #fff,
     878px 340px #fff, 569px 1832px #fff, 1422px 1684px #fff, 1946px 1907px #fff,
@@ -595,7 +607,7 @@ body {
     width: 3px;
     height: 3px;
     background: transparent;
-    animation: animStar 150s linear infinite;
+    animation: animStar 200s linear infinite;
 
     box-shadow: 387px 1878px #fff, 760px 1564px #fff, 1487px 999px #fff,
     948px 1828px #fff, 1977px 1001px #fff, 1284px 1963px #fff, 656px 284px #fff,
