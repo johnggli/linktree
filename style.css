@@ -130,7 +130,7 @@ body {
 
 /*-------------------------popup------------------------*/
 /* credits: https://www.youtube.com/watch?v=lAS2glU0xlc */
-.popup {
+.overlay {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,9 +147,9 @@ body {
     transition: .5s ease-in-out;
 }
 
-.popup-inner {
+.popup {
     position: relative;
-    bottom: -100vw;
+    /* top: -100vw; */
     /* right: -100vh; */
     display: flex;
     align-items: center;
@@ -159,6 +159,7 @@ body {
     height: 80%;
     background-color: var(--accentColor);
     /* transform: rotate(32deg); */
+    transform: scale(0);
     transition: .5s ease-in-out;
 }
 
@@ -199,13 +200,14 @@ body {
     line-height: 1.5;
 }
 
-.popup:target {
+.overlay:target {
     visibility: visible;
     opacity: 1;
 }
 
-.popup:target .popup-inner {
-    bottom: 0;
+.overlay:target .popup {
+    transform: scale(1);
+    /* top: 0; */
     /* right: 0; */
     /* transform: rotate(0); */
 }
