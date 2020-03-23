@@ -78,7 +78,7 @@ body {
     color: var(--bgColor);
 }
 
-#profileQuote {
+#hashtag {
     position: relative;
     padding-bottom: 20px;
     color: var(--accentColor);
@@ -160,11 +160,25 @@ body {
     max-height: 500px;
     width: auto;
     height: auto;
-    margin: 64px;
+    margin: 56px;
     background-color: var(--accentColor);
     /* transform: rotate(32deg); */
     transform: scale(0);
     transition: .5s ease-in-out;
+}
+
+.popup-quote {
+    font-family : Baskerville, Georgia, serif;
+    font-style : italic;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: var(--accentColor);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: 1rem;
 }
 
 .popup-photo {
@@ -176,28 +190,6 @@ body {
 .popup-photo img {
     width: 100%;
     height: 100%;
-}
-
-.popup-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
-    height: 100%;
-}
-
-.popup-text h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    color: var(--bgColor2);
-}
-
-.popup-text p {
-    font-size: 0.8rem;
-    color: var(--bgColor2);
-    line-height: 1.5;
 }
 
 .overlay:target {
