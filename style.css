@@ -8,22 +8,13 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     min-height: 100vh;
     background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, #090a0f 100%);
     opacity: 0;
     animation: 1s ease-out var(--delay) 1 transitionAnimation; /* duration/timing-function/delay/iterations/name */
     animation-fill-mode: forwards;
-}
-
-@keyframes transitionAnimation {
-    0% {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 #profilePicture {
@@ -64,6 +55,8 @@ body {
     font-size: 1rem;
     text-align: center;
     display: block;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 10px;
     padding: 10px; /* 17px */
     text-decoration: none;
@@ -95,12 +88,25 @@ body {
 
     /*  animation   */
     overflow: hidden;
-    background: linear-gradient(90deg, var(--bgColor), #fff, var(--bgColor));
+    background: linear-gradient(90deg, var(--bgColor), var(--accentColor), var(--bgColor));
     background-repeat: no-repeat;
     background-size: 80%;
     animation: animate 3s linear var(--delay) infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+
+/*-------------------------animations-----------------------*/
+@keyframes transitionAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes animate {
@@ -112,13 +118,124 @@ body {
     }
 }
 
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-2000px);
+    }
+}
 
-/*--------------------------parallax------------------------*/
+
+/*-------------------------popup------------------------*/
+/* credits: https://www.youtube.com/watch?v=lAS2glU0xlc */
+.popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+.popup-inner {
+    position: relative;
+    bottom: -100vw;
+    /* right: -100vh; */
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    max-height: 599px;
+    width: 59%;
+    height: 80%;
+    background-color: var(--accentColor);
+    /* transform: rotate(32deg); */
+    transition: .5s ease-in-out;
+}
+
+.popup-photo {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.popup-photo img {
+    width: auto;
+    height: 100%;
+}
+
+.popup-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 59%;
+    height: 100%;
+    padding: 4rem;
+}
+
+.popup-text h1 {
+    font-size: 2rem;
+    font-weight: 599;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.popup-text p {
+    font-size: 0.8rem;
+    color: black;
+    line-height: 1.5;
+}
+
+.popup:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup:target .popup-inner {
+    bottom: 0;
+    right: 0;
+    /* transform: rotate(0); */
+}
+
+.popup-close {
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    border-radius: 100%;
+    background-color: black;
+    z-index: 4;
+    color: white;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/*-----------------------parallax-----------------------*/
+/* credits: https://www.youtube.com/watch?v=aywzn9cf-_U */
 #stars1 {
     width: 1px;
     height: 1px;
     background: transparent;
-    animation: animStar 100s linear infinite;
+    animation: animStar 120s linear infinite;
 
     box-shadow: 779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
     1312px 276px #fff, 451px 625px #fff, 521px 1931px #fff, 1087px 1871px #fff,
@@ -490,7 +607,7 @@ body {
     width: 2px;
     height: 2px;
     background: transparent;
-    animation: animStar 150s linear infinite;
+    animation: animStar 180s linear infinite;
 
     box-shadow: 1448px 320px #fff, 1775px 1663px #fff, 332px 1364px #fff,
     878px 340px #fff, 569px 1832px #fff, 1422px 1684px #fff, 1946px 1907px #fff,
@@ -610,7 +727,7 @@ body {
     width: 3px;
     height: 3px;
     background: transparent;
-    animation: animStar 200s linear infinite;
+    animation: animStar 240s linear infinite;
 
     box-shadow: 387px 1878px #fff, 760px 1564px #fff, 1487px 999px #fff,
     948px 1828px #fff, 1977px 1001px #fff, 1284px 1963px #fff, 656px 284px #fff,
@@ -674,13 +791,4 @@ body {
     16px 1650px #fff, 1021px 1075px #fff, 723px 424px #fff, 1175px 41px #fff,
     494px 1957px #fff, 1296px 431px #fff, 175px 1507px #fff, 831px 121px #fff,
     498px 1947px #fff, 617px 880px #fff, 240px 403px #fff;
-}
-
-@keyframes animStar {
-    from {
-        transform: translateY(0px);
-    }
-    to {
-        transform: translateY(-2000px);
-    }
 }
