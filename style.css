@@ -78,9 +78,9 @@ body {
 
 #profileQuote {
     position: relative;
+    padding-bottom: 20px;
     color: var(--accentColor);
     font-size: 1rem;
-    margin-bottom: 20px;
     display: block;
     font-family: var(--font);
     width: 100%;
@@ -206,7 +206,7 @@ body {
 
 .popup:target .popup-inner {
     bottom: 0;
-    right: 0;
+    /* right: 0; */
     /* transform: rotate(0); */
 }
 
