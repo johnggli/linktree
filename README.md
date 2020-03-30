@@ -21,3 +21,7 @@
 ### Extras
 - [Shields.io](https://shields.io/)
 - [Github Emojis](https://gist.github.com/rxaviers/7360908)
+
+---
+
+Made with ♥ by John Emerson :wave: [Get in touch](https://johnemerson1406.github.io/linktree)
