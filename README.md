@@ -23,6 +23,12 @@
 
 ---
 
+<p align="center">
+  <img alt="Layout" src="https://user-images.githubusercontent.com/43749971/77254747-c0b54280-6c41-11ea-81a0-a597ee22b56e.png">
+</p>
+
+---
+
 ## :bulb: About the project
 
 - This is an open source project that serves as a free alternative to the Linktree website, made only in html and css.
