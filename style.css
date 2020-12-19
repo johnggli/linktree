@@ -213,7 +213,7 @@ body {
     background-color: var(--bgColor);
     z-index: 4;
     color: var(--accentColor);
-    line-height: 3rem;
+    line-height: 2.7rem;
     text-align: center;
     cursor: pointer;
     text-decoration: none;
