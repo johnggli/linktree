@@ -14,9 +14,13 @@ body {
     min-height: 100vh;
     font-family: var(--font);
     background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, var(--bgColor2) 100%);
+    /* background-image: url('https://bit.ly/3nFVqJh'); */
     opacity: 0;
     animation: 1s ease-out var(--delay) 1 transitionAnimation; /* duration/timing-function/delay/iterations/name */
     animation-fill-mode: forwards;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 #profilePicture, #profilePicture img {
@@ -95,6 +99,7 @@ body {
     background-size: 80%;
     animation: animate 3s linear var(--delay) infinite;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
