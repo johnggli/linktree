@@ -37,8 +37,9 @@ This is an open source project that serves as a free alternative to the Linktree
 ## :rocket: Getting started
 
 - Clone the repository
-- Make changes to images and texts in the `index.html` file.
+- Change the profile image and texts in the `index.html` file.
 - Change the colors and fonts in the `style.css` file.
+- To change the background, go to the `style.css` file on line 17, uncomment the code snippet and change the url to whatever image you want.
 
 ---
 
