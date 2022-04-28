@@ -2,16 +2,16 @@
 <h3 align="center">Simple site to group all my profiles on social networks in one place.</h3>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/JohnEmerson1406/linktree?color=04D361&labelColor=000000">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/johecarv/linktree?color=04D361&labelColor=000000">
   
-  <a href="https://www.linkedin.com/in/johnemerson1406/">
+  <a href="https://www.linkedin.com/in/johecarv/">
     <img alt="Made by" src="https://img.shields.io/static/v1?label=made%20by&message=John%20Emerson&color=04D361&labelColor=000000">
   </a>
   
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/JohnEmerson1406/linktree?color=04D361&labelColor=000000">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/johecarv/linktree?color=04D361&labelColor=000000">
   
-  <a href="https://github.com/JohnEmerson1406/linktree/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/JohnEmerson1406/linktree?color=04D361&labelColor=000000">
+  <a href="https://github.com/johecarv/linktree/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/johecarv/linktree?color=04D361&labelColor=000000">
   </a>
 </p>
 
@@ -25,7 +25,7 @@
 ---
 
 <p align="center">
-  <img alt="Layout" src="https://user-images.githubusercontent.com/43749971/77254747-c0b54280-6c41-11ea-81a0-a597ee22b56e.png">
+  <img alt="Layout" src="https://user-images.githubusercontent.com/43749971/165794168-b1176d21-8b4c-40c7-a133-d378d0857910.gif">
 </p>
 
 ---
@@ -33,14 +33,14 @@
 ## 💡 About the project
 
 This is an open source project that serves as a free alternative to the Linktree website.
-- [Demo](https://johnemerson1406.github.io/linktree)
+- [Demo](https://johecarv.github.io/linktree)
 
 ## 🚀 Getting started
 
 If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
-[Download the ZIP from this location](https://github.com/JohnEmerson1406/linktree/archive/master.zip), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
+[Download the ZIP from this location](https://github.com/johecarv/linktree/archive/master.zip), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
 ```bash
-git clone https://github.com/JohnEmerson1406/linktree
+git clone https://github.com/johecarv/linktree
 ```
 - Once the files are on your machine, open the _linktree_ folder in [Visual Studio Code](https://code.visualstudio.com/).
 - With the files open in Visual Studio Code, press the **Go Live** button at the bottom of the window to launch the files with [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
@@ -63,4 +63,4 @@ This project is under the MIT license. See the [LICENSE](LICENSE.md) file for mo
 
 ---
 
-Made with ❤️ by John Emerson :wave: [Get in touch](https://johnemerson1406.github.io/linktree)
+Made with ❤️ by John Emerson :wave: [Get in touch](https://johecarv.github.io/linktree)
