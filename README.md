@@ -24,9 +24,7 @@
 
 ---
 
-<p align="center">
-  <img alt="preview" src="preview.png">
-</p>
+![preview](preview.png)
 
 ---
 
