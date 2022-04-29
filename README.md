@@ -24,7 +24,9 @@
 
 ---
 
-![screenshot](screenshot.png)
+<p align="center">
+  <img alt="preview" src="preview.png">
+</p>
 
 ---
 
