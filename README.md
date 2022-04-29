@@ -24,7 +24,7 @@
 
 ---
 
-![preview](preview.png)
+![screenshot](screenshot.png)
 
 ---
 
