@@ -3,7 +3,7 @@
 :root {
     --bgColor: #223344;
     --bgColor2: #090a0f;
-    --accentColor: #E6E6E6;
+    --accentColor: #FFF;
     --font: 'Karla', sans-serif;
     --delay: .3s;
 }
@@ -28,7 +28,7 @@ body {
     width: 96px;
     height: 96px;
     display: block;
-    margin: 35px auto 20px;
+    margin: 40px auto 20px;
     border-radius: 50%;
     -webkit-tap-highlight-color: transparent;
 }
