@@ -166,7 +166,7 @@ body {
     width: auto;
     height: auto;
     margin: 56px;
-    background-color: var(--accentColor);
+    background-color: var(--bgColor);
     /* transform: rotate(32deg); */
     transform: scale(0);
     transition: .5s ease-in-out;
@@ -178,7 +178,6 @@ body {
     position: flex;
     color: var(--accentColor);
     padding: 20px;
-    background-color: var(--bgColor);
     text-align: center;
     font-size: 1rem;
 }
