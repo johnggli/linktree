@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my little linktree</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/211959965?v=4" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <audio id="bg-music" preload="auto" loop>
+    <source src="BG-miraidempa.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+    const audio = document.getElementById('bg-music');
+
+    function enableAudio() {
+        audio.play().then(() => {
+            console.log('Music started');
+        }).catch(err => {
+            console.log('Still blocked:', err);
+        });
+
+        window.removeEventListener('click', enableAudio);
+        window.removeEventListener('keydown', enableAudio);
+        window.removeEventListener('touchstart', enableAudio);
+    }
+
+    window.addEventListener('click', enableAudio, { once: true });
+    window.addEventListener('keydown', enableAudio, { once: true });
+    window.addEventListener('touchstart', enableAudio, { once: true });
+    </script>
+
+    <!-- Parallax Pixel Background Animation -->
+    <!-- End of Parallax Pixel Background Animation -->
+
+    <a id="profilePicture" href="#popup">
+      <img src="https://avatars.githubusercontent.com/u/211959965?v=4" alt="Profile Picture">
+    </a>
+
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <a href="https://avatars.githubusercontent.com/u/211959965?v=4" target="_blank">
+            <img src="https://avatars.githubusercontent.com/u/211959965?v=4" alt="Profile Picture">
+          </a>
+        </div>
+        <div class="popup-quote">
+          "My strike zone for women lies between seven and twelve years old..."
+        </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
+      </div>
+    </div>
+
+    <div id="userName">
+      wowowowow i have my own linktree isn't that cool
+    </div>
+
+    <div id="links">
+      <a class="link" href="https://www.roblox.com/users/2742978976/profile" target="_blank">
+        <i class="fa fa-play-circle">&nbsp;</i>Roblox
+      </a>
+      <a class="link" href="https://pinterest.com/lethamist/" target="_blank">
+        <i class="fab fa-pinterest">&nbsp;</i>Pinterest
+      </a>
+      <a class="link" href="https://open.spotify.com/user/31o5ld3xsbqgdnmss7onucaozmca" target="_blank">
+        <i class="fab fa-spotify">&nbsp;</i>Spotify
+      </a>
+      <a class="link" href="https://soundcloud.com/lethaltree/" target="_blank">
+        <i class="fab fa-soundcloud">&nbsp;</i>Soundcloud
+      </a>
+      <a class="link" href="https://myanimelist.net/profile/lethamite" target="_blank">
+        <i class="fa fa-play-circle">&nbsp;</i>MyAnimeList
+      </a>
+      <a class="link" href="https://steamcommunity.com/id/StoneColdAgent/" target="_blank">
+        <i class="fab fa-steam">&nbsp;</i>Steam
+      </a>
+      <a class="link" href="https://vndb.org/u295866/ulist?f=&l=0&l=1&l=2&l=3&l=4&l=7&mul=0&p=1&s=3q01" target="_blank">
+        <i class="fa fa-play-circle">&nbsp;</i>VNDB
+      </a>
+      <a class="link" href="https://twitter.com/cvnnyleth" target="_blank">
+        <i class="fab fa-twitter">&nbsp;</i>Twitter
+      </a>
+    </div>
+
+    <div id="hashtag">
+      #CVNNY
+    </div>
+
+  </body>
+</html>
